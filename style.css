@@ -1,0 +1,16 @@
+#a1{
+    color: black;
+}
+h2{
+    color: brown;
+}
+h1{
+    color:aqua
+}
+.a2{
+    color: chartreuse;
+}
+.a2,#a1,p{
+    background-color: hotpink;
+
+}
