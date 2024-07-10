@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border:1px solid;
+        }
+        table{
+            border-collapse: collapse;
+            width:50%;
+        }
+        th{
+            height:50px
+        }
+        td{
+            text-align: center;
+            vertical-align:bottom;
+            height: 100px;
+        }
+        td,th{
+            padding: 15px;
+            border-bottom: 30px solid;
+        }
+        li{
+            display: inline;
+        }
+        span{
+            display: block;
+        }
+        h1{
+            visibility:hidden;
+        }
+        .main1{
+            background-color: brown;
+            width: 300px;
+            height: 300px;
+        }
+        .sub1{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+            left:100px;
+        }
+        .container{
+            position: relative;
+
+        }
+        .topleft{
+            position:absolute;
+            top:8px;
+            left:16px;
+            font-size: 18px;
+            color: black;
+        }
+        img{
+            opacity:0.4 ;
+        }
+        .topright{
+            position: absolute;
+            top:8px;
+            right:16px;
+            font-size: 18px;
+
+        }
+        .bottom-left{
+            position: absolute;
+            bottom:8px;
+            left:16px;
+
+        }
+        .bottom-right{
+            position:absolute;
+            bottom: 8px;
+            right:16px;
+        }
+        .centered{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .first{
+            background-color: red;
+            width: 400px;
+            height: 300px;
+        }
+        .second{
+            background-color: green;
+            width:300px;
+            height: 200px;
+            position: relative;
+            top:60px;
+            left:50px;
+        }
+        .third{
+            background-color: blue;
+            width:70px;
+            height:70px;
+            position: relative;
+            top:-70px;
+            left:170px;
+        }
+        .blue{
+            background-color: blue;
+            width:500px;
+            height:500px;
+        }
+        .red{
+            background-color: red;
+            width:300px;
+            height: 300px;
+            position: relative;
+            top:200px;
+            left:200px;
+        }
+        .black{
+            background-color: black;
+            width:300px;
+            height:300px;
+            position: relative;
+            top:-300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>first name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Sharma</td>
+        </tr>
+        <tr>
+            <td>Virat</td>
+            <td>Kholi</td>
+        </tr>
+    </table>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <span>india won the world cup</span><span>india india india</span><span>very happy</span>
+    <h1 class="hidden">,klohhhhhhhhhhhhhhhhh</h1>
+    <div class="main">
+        <div class="sub">
+
+        </div>
+    </div>
+    <div class="main1">
+        <div class="sub1">
+
+        </div>
+    </div>
+    <div class="container">
+        <img src="HD-wallpaper-mountain-with-dense-green-forest-mountain-forest-sun-green-nature-sunrise-clouds-sky.jpg" alt="" height="700px" style="width:100%">
+        <div class="topleft">topleft</div>
+        <div class="topright">topright</div>
+        <div class="bottom-left">bottomleft</div>
+        <div class="bottom-right">bottomright</div>
+        <div class="centered">centre</div>
+
+    </div>
+
+    <div class="first">
+        <div class="second"></div>
+        <div class="third"></div>
+
+    </div>
+    <div class="blue">
+        <div class="red"></div>
+        <div class="black"></div>
+    </div>
+    
+</body>
+</html>
