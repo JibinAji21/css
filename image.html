@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+
+        }
+        .black-box{
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+        .gray-box{
+            position: absolute;
+            z-index: 3;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .green-box{
+            position: absolute;
+            z-index: 2;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+        img{
+            position: absolute;
+            z-index: -2;
+            opacity: 0.3;
+            display: block;
+
+        }
+        #w1{
+            background-color: white;
+            width: 400px;
+            height: 65px;
+            border: 1px;
+            overflow-x:hidden;
+            overflow-y: scroll;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>plant tree</h1>
+    <img src="HD-wallpaper-mountain-with-dense-green-forest-mountain-forest-sun-green-nature-sunrise-clouds-sky.jpg" alt="">
+    <p style="color: green;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic? Cupiditate alias perspiciatis voluptas excepturi tempora ipsam pariatur velit, dolorum dolores est laudantium expedita incidunt, minima, corrupti praesentium placeat fugit!</p>
+    <div id="w1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus quos rerum nam voluptate sit ex? Error, atque officia. Atque saepe ad id quidem aliquid distinctio repudiandae esse? Voluptates, minus?</div>
+
+     <div class="container">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+</div>
+    
+</body>
+</html>
