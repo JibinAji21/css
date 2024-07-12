@@ -5,16 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin:0;
+        }
+        ul{
+            list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li a{
+    display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration:none;
+}
+
+        
         img{
             opacity: 0.3;
         }
         img:hover{
             opacity: 0.9;
         }
+        p::first-letter{
+            color: darkgreen;
+            font-size: large;
+        }
+        p::first-line{
+            color: blue;
+            font-variant: small-caps;
+        }
+        h1::before{
+            content: url(Untitled.jpeg);
+        }
+        ::marker{
+            color: deeppink;
+        }
+        ::selection{
+            color: red;
+            background: black;
+        }
+        .background{
+            background: url(HD-wallpaper-mountain-with-dense-green-forest-mountain-forest-sun-green-nature-sunrise-clouds-sky.jpg);
+            border: 2px solid black;
+        }
+        .transbox{
+            margin: 30px;
+            background-color:blue;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+        .transbox p{
+            margin: 5%;
+            font-weight: bold;
+            color: red;
+        }
     </style>
 </head>
 <body>
     <img src="HD-wallpaper-mountain-with-dense-green-forest-mountain-forest-sun-green-nature-sunrise-clouds-sky.jpg" alt="">
+    <h1>hyhyhyhyhyyhgsbbbbbbbbbbbbbbbbbbbbbbbbbbbb</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime earum atque, porro ducimus rerum deserunt itaque ut dolorum, quidem vero quaerat quae, rem quia? Sint recusandae quae qui quibusdam?</p>
+    <ul>
+        <li>hy</li>
+        <li>bie</li>
+    </ul>
+    <div class="background">
+        <div class="transbox">
+            <p>hjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+
+        </div>
+    </div>
+    <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+  
+
     
 </body>
 </html>
