@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+            border: 2px blue solid;
+            background-color: aqua;
+            color: black;
+            font-style:italic;
+            outline: none;
+           
+        }
+        input[type=text]:focus{
+            background-color: brown;
+        }
+        #abc{
+            background-image: url(Untitled.png);
+            background-position: ;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            padding: 12px 60px 12px 40px;
+            transition: width 0.4s ease-in-out;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>form</h2>
+    <form >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="john">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" value="cena">
+        <input type="text" name="search" placeholder="Search.." id="abc">
+    </form>
+    
+</body>
+</html>
