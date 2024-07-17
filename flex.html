@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            background-color: gray;
+            height: 200px;
+            align-content:center;
+        }
+        .flex > div{
+            width: 100px;
+            text-align: center;
+            line-height: 75px;
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>CSS FLEX</h2>
+    <div class="flex">
+        <div style="order: 4;">x</div>
+        <div style="order: 3;">y</div>
+        <div style="order: 1;">z</div>
+        <div style="order: 2; flex-grow: 7;">a</div>
+
+        
+    </div>
+    
+</body>
+</html>
