@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            
+            display: grid;
+            grid-template-areas: "zayn zayn zayn zayn zayn";
+            background-color: dodgerblue;
+            padding: 10px;
+            column-gap: 50px;
+            row-gap: 50px;
+            text-align: center;
+            justify-content: center;
+            height: 500px;
+            
+        }
+        .grid>div{
+            background-color:green;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+           
+
+
+        }
+        .grid-item1{
+            
+            grid-column:1/span 1;
+            grid-row: 1/span 1;
+            grid-area: zayn;
+            
+            
+        }
+        .grid-item2{
+            grid-area: 0/0/0/0;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Grid</h2>
+    <div class="grid">
+        <div class="grid-item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item2">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+    </div>
+    
+</body>
+</html>
