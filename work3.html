@@ -10,6 +10,7 @@
         .sub{grid-area: sub;}
         .img{grid-area: img;}
         .msg{grid-area: msg;}
+        .button{grid-area:button}
         .main{
             display: grid;
             grid-template-areas:
@@ -24,9 +25,11 @@
         .head{
             background-color: brown;
             text-align: center;
+            font-size: 8px;
         }
         .nav{
             background-color: chartreuse;
+            text-align: center;
         }
         .sub{
             background-color: cornflowerblue;
@@ -44,13 +47,11 @@
             display: flex;
         }
         .btn1{
-            display: flex;
-             flex-direction: row;
-             width: 520px;
+            flex: 50%;
              height: 50px;
              background-color: DodgerBlue;
              line-height: 50px;
-             font-size: 30px;
+             font-size: 20px;
              /* padding-left: 20%; */
              justify-content:center ;
              
@@ -58,16 +59,35 @@
 
         }
         .btn2{
-            display: flex;
-            flex-direction: row;
-            width: 520px;
+            flex: 50%;
+            /* width: 520px; */
             height: 50px;
              background-color: green;
              line-height: 50px;
-             font-size: 30px;
+             font-size: 20px;
              padding-left: 20px;
              justify-content: center;
         }
+        @media  screen and (max-width:600px){
+            .main{
+                grid-template-areas:
+                'head head head head'
+                'nav nav nav nav'
+                'sub sub sub sub'
+                'img img img img'
+                'msg msg msg msg'
+                'button button button button';
+                grid-template-rows: 60px 60px 270px 250px 100px 100px;
+            }
+            
+        }
+        /* #p1{
+            font-size: 40px;
+        }
+        #p2{
+            font-size: 2vw;
+
+        } */
     </style>
 </head>
 <body>
@@ -83,7 +103,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad beatae deserunt repellat tenetur? <br> Distinctio quisquam repellendus ducimus expedita quia, eveniet autem maxime ad eum enim iste molestiae error omnis?</p>
         </div>
         <div class="img">
-            <img src="images.jpeg" alt="" style="width: 834px ;height: 420px; padding: 1% -1%;">
+            <img src="images.jpeg" alt="" style="width: 100%;height:100%;">
         </div>
         <div class="msg"><h1>"Lorem ipsum dolor sit amet,"</h1>
         </div>
@@ -94,6 +114,8 @@
 
 
     </div>
+    <p id="p1">hyhyhy</p>
+    <p id="p2">acbnmmmm</p>
     
 </body>
 </html>
